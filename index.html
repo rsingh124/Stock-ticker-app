@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Stock Analysis App</title>
+  </head>
+  <body>
+    <h1>Stock Analysis App</h1>
+    <form id="stockform" class="stockform">
+      <input type="text" maxlength="5" id="symbolInput" value="" name="symbol" />
+      <button type="submit" id="submit">Check</button>
+    </form>
+    <p id="error"></p>
+    
+
+    <div class="stocksDisplay" id="InfoTab">
+      <div>
+        <p class="label">Symbol:</p>
+        <span class="symbol data"> </span>
+      </div>
+      <div>
+        <p class="label">Last Date:</p>
+        <span class="date data"></span>
+      </div>
+      <div>
+        <p class="label">CurrentPrice:</p>
+        <span class="price data"> </span>
+        <span class="label usd"> USD </span>
+      </div>
+
+      <div>
+        <p class="label">Volume:</p>
+        <span class="volume data"></span>
+      </div>
+
+      <div>
+        <p class="label">Change:</p>
+        <span class="change data"></span>
+      </div>
+    </div>
+
+    <script src="js/main.es6.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  </body>
+</html>

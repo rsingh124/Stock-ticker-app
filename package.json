@@ -1,0 +1,31 @@
+{
+  "name": "stock-ticker",
+  "version": "1.0.0",
+  "description": "Please read the instructions in the [assignment PDF](dmit2008-assignment-01.pdf)",
+  "main": "index.js",
+  "scripts": {
+    "babel": "npx babel js/main.es6.js -o js/main.js",
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ranbir singh",
+  "license": "MIT",
+  "dependencies": {
+    "git": "^0.1.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.12.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsingh124/stock-tickers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rsingh124/stock-tickers/issues"
+  },
+  "homepage": "https://github.com/rsingh124/stock-tickers#readme"
+}
